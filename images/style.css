@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    background-color:  hsl(204, 43%, 93%)
+}
+.container{
+    border: 0px solid white;
+    height: 71vh;
+    width: 45vw;
+    border-radius: 8px;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+   /* grid-template-rows: 40px auto 40px;*/
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "h h h h h h h h h h h h"
+        "s s s s s s a a a a a a"
+        "s s s s s s a a a a a a";
+    
+}
+.grid-head{
+    grid-area: h;
+    padding: 27px;
+    color: hsl(218, 22%, 67%);
+    font-weight: bold;
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.grid-head > .text-pad{
+    padding-bottom: 16px;
+
+}
+.grid-head > .paragraph-pad{
+    padding-bottom: 9px;
+}
+
+#text-orange{
+    color:hsl(71, 73%, 54%) ;
+}
+#text-cyan{
+    color:  hsl(179, 62%, 43%);
+}
+.grid-sub{
+    grid-area: s;
+    padding: 16px;
+    background-color: #008B8B;
+    color: hsl(204, 43%, 93%);
+    overflow: hidden;
+    border-bottom-left-radius: 8px;
+}
+.grid-sub > .text-bold{
+    font-weight: bold;
+}
+
+button{
+    background-color:  hsl(71, 73%, 54%);
+    color: white;
+    font-size: 16px;
+    width: 230px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Karla", sans-serif;
+    margin-top: 18px;
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+.grid-sub > .pad-element{
+    padding: 12px;
+}
+
+.grid-about{
+    grid-area: a;
+    padding: 16px;
+   background-color: hsl(179, 62%, 43%);
+   color: hsl(204, 43%, 93%);
+   overflow: hidden;
+   border-bottom-right-radius: 8px;
+    
+}
+.grid-about > .about-pad{
+    padding: 19px 0 22px 0;
+    margin-bottom: 5px;
+}
+
+li{
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0px 8px 3px 3px;
+    font-size: 10px;
+
+}
+span{
+    font-weight: bold;
+}
+#text-large{
+    font-size: 30px;
+}
+
