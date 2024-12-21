@@ -15,8 +15,8 @@ body{
 }
 .container{
     border: 0px solid white;
-    height: 71vh;
     width: 45vw;
+    height: auto;
     border-radius: 8px;
     box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
 }
@@ -114,4 +114,20 @@ span{
 #text-large{
     font-size: 30px;
 }
+@media (max-width: 768px) {
+    .container{
+        width:75vw;
+    }
+    .wrapper {
+        grid-template-areas:
+            "h h h h h h h h h h h h"
+            "a a a a a a a a a a a a"
+            "s s s s s s s s s s s s";
+    }
+}
+@media (max-width: 1092px) {
+    .container{
+        width:75vw;
+    }
 
+}
